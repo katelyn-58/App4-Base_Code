@@ -80,7 +80,7 @@ blah, blah, blah, blah
     left: -100vw;
     overflow-y: auto;
     z-index: 0;
-    background-color: hsl(105, 35%, 76%);
+    background-color: hsl(209, 35%, 76%);
 }
 
 	
@@ -98,7 +98,7 @@ blah, blah, blah, blah
 <div id="content" class="w3-container">
 	<p>If you have trouble sleeping and wonder if it’s due to insomnia, this is the quiz for you! Click below to get started.</p>
 	
-	<a href="#one" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-sand"> Begin Quiz </a>
+	<a href="#one" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-sand"> Begin Quiz </a>
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
@@ -110,9 +110,9 @@ blah, blah, blah, blah
 	</div>
 	
     	<div id="content" class="w3-container">
-       		 <p>Are your eyes watery or itchy?</p>  
-		<a href="#two"  onclick="allergyAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-sand"> yes </a>
-		<a href="#two"  onclick="coldAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-sand"> no </a>
+       		 <p>Do you have difficulty falling asleep?</p>  
+		<a href="#two"  onclick="insomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge ww3-hover-blue-grey"> yes </a>
+		<a href="#two"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> no </a>
 	</div>
 	
 </div>
@@ -124,9 +124,9 @@ blah, blah, blah, blah
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you have a fever?</p>
-		<a href="#three"  onclick="coldAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-sand"> yes </a>
-		<a href="#three"  onclick="allergyAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-sand"> no </a>
+		<p>Do you wake up frequently throughout the night and have trouble going back to sleep?</p>
+		<a href="#three"  onclick="insomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> yes </a>
+		<a href="#three"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> no </a>
 	</div>
 
 </div>	
@@ -138,9 +138,9 @@ blah, blah, blah, blah
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you have a sore throat?</p>
-		<a href="#four"  onclick="coldAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-sand"> yes </a>
-		<a href="#four"  onclick="allergyAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-sand"> no </a>
+		<p>Do you have increased feelings anxiety, irritability, or lack of motivation?</p>
+		<a href="#four"  onclick="insomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> yes </a>
+		<a href="#four"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> no </a>
     	</div>
 	
 	
@@ -152,9 +152,9 @@ blah, blah, blah, blah
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Are your symptoms seasonal or chronic?</p>
-		<a href="#five"  onclick="allergyAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-sand"> yes </a>											  
-		<a href="#five"  onclick="coldAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-sand"> no </a>
+		<p>Do you rely on sleep aids (such as melatonin) frequently?</p>
+		<a href="#five"  onclick="insomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> yes </a>											  
+		<a href="#five"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> no </a>
     	</div>
 		
 </div>	
@@ -166,9 +166,9 @@ blah, blah, blah, blah
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you have muscle aches?</p>
-		<a href="#six"  onclick="coldAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-sand"> yes </a>											  
-		<a href="#six"  onclick="allergyAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-sand"> no </a>
+		<p>Do you struggle to pay attention or remember throughout the day?</p>
+		<a href="#six"  onclick="insomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> yes </a>											  
+		<a href="#six"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> no </a>
     	</div>
 	
 </div>	
@@ -180,9 +180,9 @@ blah, blah, blah, blah
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Did your symptoms develop gradually?</p>
-		<a href="#seven"  onclick="coldAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-sand"> yes </a>											  
-		<a href="#seven"  onclick="allergyAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-sand"> no </a>
+		<p>Do you often worry about your sleeping patterns?</p>
+		<a href="#seven"  onclick="insomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> yes </a>											  
+		<a href="#seven"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> no </a>
     	</div>
 		
 </div>	
@@ -195,7 +195,7 @@ blah, blah, blah, blah
 	
 	<div id="content" class="w3-container">
 		<p id="results"></p>
-		<a onclick="getResults();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-sand">CLICK FOR RESULTS</a>
+		<a onclick="getResults();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey">CLICK FOR RESULTS</a>
 	</div>
 	
 </div>
