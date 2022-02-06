@@ -48,12 +48,19 @@ blah, blah, blah, blah
 		
         }
 	function getResults(){
-		var allergyPercent = 100 * (allergy_count/(allergy_count + cold_count));
-		var coldPercent = 100 * (cold_count/(allergy_count + cold_count));
-		document.getElementById("results").innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
+		var insomniaPercent = 100 * (insomnia_count/(insomnia_count + notinsomnia_count));
+		var notinsomniaPercent = 100 * (notinsomnia_count/(insomnia_count + notinsomnia_count));
+		var resultText = document.getElementById("results");
+		resultText.innerHTML = "Probability it is insomnia =" + insomniaPercent + "<br> Probability it is not insomnia =" + notinsomniaPercent; 
 	}
 	
-/* created function getResults for last page, which displays user's final results using the formula presented. added ending bracket to function getResults to fix results error and complete the function. */	
+	// The following code lets you know when the file was last modified.
+	// This will help you know if you are looking at the new version of the file or if there is a delay on GitHub.
+     	var docMod = document.lastModified;
+       		alert("This file last modified  " + docMod);
+       		console.log("This file last modified  " + docMod);
+	// If you find the alert box annoying, comment out that line and timestamp will still show up in the debugging console
+
 		
 
   </script>
@@ -73,10 +80,9 @@ blah, blah, blah, blah
     left: -100vw;
     overflow-y: auto;
     z-index: 0;
-    background-color: hsl(28, 100%, 85%);
+    background-color: hsl(105, 35%, 76%);
 }
 
-/* changed background color to light orange */
 	
   .page:target {
     left: 0vw;
@@ -85,7 +91,7 @@ blah, blah, blah, blah
 </style>
 
 <body>
-<div id="header" class="w3-container w3-flat-carrot">
+<div id="header" class="w3-container w3-dark-green">
 	<h1>Cold or Allergies?</h1>
 </div>
 	
@@ -99,99 +105,97 @@ blah, blah, blah, blah
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
 <div class="page" id="one">
-	<div id="header" class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-dark-green">
 		<h1>Question 1</h1>
 	</div>
 	
     	<div id="content" class="w3-container">
        		 <p>Are your eyes watery or itchy?</p>  
-		<a href="#two"  onclick="allergyAdd();" class="w3-button w3-large w3-black w3-round-xxlarge"> yes </a>
-		<a href="#two"  onclick="coldAdd();" class="w3-button w3-large w3-black w3-round-xxlarge"> no </a>
+		<a href="#two"  onclick="allergyAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-pale-green"> yes </a>
+		<a href="#two"  onclick="coldAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-pale-green"> no </a>
 	</div>
 	
 </div>
-	<!-- added <a> commands to create links that redirects to the next page. onclick functions aids in calculating the final results. created larger buttons.-->
+	
 
 <div class="page" id="two">
-	<div class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-dark-green">
 		<h1>Question 2</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
-		<a href="#three"  onclick="coldAdd();" class="w3-button w3-large w3-black w3-round-xxlarge"> yes </a>
-		<a href="#three"  onclick="allergyAdd();" class="w3-button w3-large w3-black w3-round-xxlarge"> no </a>
+		<a href="#three"  onclick="coldAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-pale-green"> yes </a>
+		<a href="#three"  onclick="allergyAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-pale-green"> no </a>
 	</div>
 
 </div>	
 	
 	
 <div class="page" id="three">
-	<div class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-dark-green">
 		<h1>Question 3</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a sore throat?</p>
-		<a href="#four"  onclick="coldAdd();" class="w3-button w3-large w3-black w3-round-xxlarge"> yes </a>
-		<a href="#four"  onclick="allergyAdd();" class="w3-button w3-large w3-black w3-round-xxlarge"> no </a>
+		<a href="#four"  onclick="coldAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-pale-green"> yes </a>
+		<a href="#four"  onclick="allergyAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-pale-green"> no </a>
     	</div>
 	
-<!--switched onclick functions to corresponding answers for accurate results-->
 	
 </div>	
 
 <div class="page" id="four">
-	<div class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-dark-green">
 		<h1>Question 4</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p>Are your symptoms seasonal or chronic?</p>
-		<a href="#five"  onclick="allergyAdd();" class="w3-button w3-large w3-black w3-round-xxlarge"> yes </a>											  
-		<a href="#five"  onclick="coldAdd();" class="w3-button w3-large w3-black w3-round-xxlarge"> no </a>
+		<a href="#five"  onclick="allergyAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-pale-green"> yes </a>											  
+		<a href="#five"  onclick="coldAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-pale-green"> no </a>
     	</div>
 		
 </div>	
 	
-<!--switched button colors from light green to black-->
 	
 <div class="page" id="five">
-	<div class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-dark-green">
 		<h1>Question 5</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p>Do you have muscle aches?</p>
-		<a href="#six"  onclick="coldAdd();" class="w3-button w3-large w3-black w3-round-xxlarge"> yes </a>											  
-		<a href="#six"  onclick="allergyAdd();" class="w3-button w3-large w3-black w3-round-xxlarge"> no </a>
+		<a href="#six"  onclick="coldAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-pale-green"> yes </a>											  
+		<a href="#six"  onclick="allergyAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-pale-green"> no </a>
     	</div>
 	
 </div>	
-	<!-- created question 5-->
+
 	
 <div class="page" id="six">
-	<div class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-dark-green">
 		<h1>Question 6</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p>Did your symptoms develop gradually?</p>
-		<a href="#seven"  onclick="coldAdd();" class="w3-button w3-large w3-black w3-round-xxlarge"> yes </a>											  
-		<a href="#seven"  onclick="allergyAdd();" class="w3-button w3-large w3-black w3-round-xxlarge"> no </a>
+		<a href="#seven"  onclick="coldAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-pale-green"> yes </a>											  
+		<a href="#seven"  onclick="allergyAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-pale-green"> no </a>
     	</div>
 		
 </div>	
-	<!-- created question 6-->
+	
 
 <div class="page" id="seven">
-	<div class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-dark-green">
 		<h1>Results</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p id="results"></p>
-		<a onclick="getResults();" class="w3-button w3-large w3-black w3-round-xxlarge">CLICK FOR RESULTS</a>
+		<a onclick="getResults();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-pale-green">CLICK FOR RESULTS</a>
 	</div>
 	
 </div>
@@ -200,7 +204,7 @@ blah, blah, blah, blah
 		
 
 
-<footer class="w3-bottom w3-container w3-flat-carrot">
+<footer class="w3-bottom w3-container w3-dark-green">
 	<p>DIY!</p>
 </footer>
 
