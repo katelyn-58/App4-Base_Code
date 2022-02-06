@@ -88,35 +88,51 @@ blah, blah, blah, blah
     left: 0vw;
     z-index: 1;
 }
+   img, object{
+     max-height:90%;
+             max-width:90%;
+}
+
 </style>
 
 <body>
-<div id="header" class="w3-container w3-flat-midnight-blue">
-	<h1>Insomnia Quiz</h1>
+<div id="header" class="w3-container w3-flat-midnight-blue"> <!--header for front page of quiz-->
+	<h1>Insomnia Quiz</h1> <!--title-->
 </div>
 	
 <div id="content" class="w3-container">
-	<p>If you have trouble sleeping and wonder if it’s due to insomnia, this is the quiz for you! Click below to get started.</p>
+	<p>If you have trouble sleeping and wonder if it’s due to insomnia, this is the quiz for you! Click below to get started.</p> 
 	
-	<a href="#one" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> Begin Quiz </a>
+	<a href="#one" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-blue-grey"> Begin Quiz </a> <!--button that starts survey when clicked-->
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	
+	<img src="https://domf5oio6qrcr.cloudfront.net/medialibrary/11203/283fb478-5554-44aa-b37f-7917a90f38d7.jpg"> <!--displays image-->
+	
+	<footer class="w3-bottom w3-container w3-flat-midnight-blue"> 
+	        <p>Brought to you by Katelyn Eusebio and the Maker Space team!</p> <!--paragraph in footer-->
+	</footer>
+	</div> 
+</div> <!--end of front page-->
 
-<div class="page" id="one">
+<div class="page" id="one"> <!--start of page one-->
 	<div id="header" class="w3-container w3-flat-midnight-blue">
 		<h1>Question 1</h1>
 	</div>
 	
     	<div id="content" class="w3-container">
-       		 <p>Do you have difficulty falling asleep?</p>  
-		<a href="#two"  onclick="insomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> yes </a>
-		<a href="#two"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> no </a>
+       		 <p>Do you have difficulty falling asleep?</p>  <!-- displays question 1-->
+		<a href="#two"  onclick="insomniaAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-blue-grey"> yes </a> <!--adds one to insomnia tally when yes is clicked-->
+		<a href="#two"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-blue-grey"> no </a> <!-- adds one to notinsomnia tally when no is clicked-->
+		
+	<footer class="w3-bottom w3-container w3-flat-midnight-blue">
+	        <p>Brought to you by Katelyn Eusebio and the Maker Space team!</p> 
+	</footer>
 	</div>
 	
-</div>
-	
+</div> <!--end of page one-->
 
 <div class="page" id="two">
 	<div id="header" class="w3-container w3-flat-midnight-blue">
@@ -124,13 +140,15 @@ blah, blah, blah, blah
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you wake up frequently throughout the night and have trouble going back to sleep?</p>
-		<a href="#three"  onclick="insomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> yes </a>
-		<a href="#three"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> no </a>
-	</div>
-
-</div>	
-	
+		<p>Do you wake up frequently throughout the night and have trouble going back to sleep?</p> <!-- displays question 2-->
+		<a href="#three"  onclick="insomniaAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-blue-grey"> yes </a>
+		<a href="#three"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-blue-grey"> no </a>
+		
+	<footer class="w3-bottom w3-container w3-flat-midnight-blue">
+	        <p>Brought to you by Katelyn Eusebio and the Maker Space team!</p> 
+	</footer>
+	</div> 
+</div> <!--end of page two-->		
 	
 <div class="page" id="three">
 	<div id="header" class="w3-container w3-flat-midnight-blue">
@@ -138,13 +156,16 @@ blah, blah, blah, blah
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you have increased feelings anxiety, irritability, or lack of motivation?</p>
-		<a href="#four"  onclick="insomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> yes </a>
-		<a href="#four"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> no </a>
+		<p>Do you have increased feelings anxiety, irritability, or lack of motivation?</p> <!--displays question 3-->
+		<a href="#four"  onclick="insomniaAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-blue-grey"> yes </a>
+		<a href="#four"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-blue-grey"> no </a>
+		
+	<footer class="w3-bottom w3-container w3-flat-midnight-blue">
+	        <p>Brought to you by Katelyn Eusebio and the Maker Space team!</p> 
+	</footer>
     	</div>
-	
-	
-</div>	
+		
+</div>	<!--end of page three-->	
 
 <div class="page" id="four">
 	<div id="header" class="w3-container w3-flat-midnight-blue">
@@ -152,13 +173,16 @@ blah, blah, blah, blah
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you rely on sleep aids (such as melatonin) frequently?</p>
-		<a href="#five"  onclick="insomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> yes </a>											  
-		<a href="#five"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> no </a>
+		<p>Do you rely on sleep aids (such as melatonin) frequently?</p> <!--displays question 4-->
+		<a href="#five"  onclick="insomniaAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-blue-grey"> yes </a>											  
+		<a href="#five"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-blue-grey"> no </a>
+		
+	<footer class="w3-bottom w3-container w3-flat-midnight-blue">
+	        <p>Brought to you by Katelyn Eusebio and the Maker Space team!</p> 
+	</footer>
     	</div>
 		
-</div>	
-	
+</div>	<!--end of page four-->	
 	
 <div class="page" id="five">
 	<div id="header" class="w3-container w3-flat-midnight-blue">
@@ -166,13 +190,16 @@ blah, blah, blah, blah
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you struggle to pay attention or remember throughout the day?</p>
-		<a href="#six"  onclick="insomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> yes </a>											  
-		<a href="#six"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> no </a>
+		<p>Do you struggle to pay attention or remember throughout the day?</p> <!--displays question 5-->
+		<a href="#six"  onclick="insomniaAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-blue-grey"> yes </a>											  
+		<a href="#six"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-blue-grey"> no </a>
+		
+	<footer class="w3-bottom w3-container w3-flat-midnight-blue">
+	        <p>Brought to you by Katelyn Eusebio and the Maker Space team!</p> 
+	</footer>
     	</div>
 	
-</div>	
-
+</div>	<!--end of page five-->	
 	
 <div class="page" id="six">
 	<div id="header" class="w3-container w3-flat-midnight-blue">
@@ -180,13 +207,16 @@ blah, blah, blah, blah
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you often worry about your sleeping patterns?</p>
-		<a href="#seven"  onclick="insomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> yes </a>											  
-		<a href="#seven"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey"> no </a>
+		<p>Do you often worry about your sleeping patterns?</p> <!--displays question 6-->
+		<a href="#seven"  onclick="insomniaAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-blue-grey"> yes </a>											  
+		<a href="#seven"  onclick="notinsomniaAdd();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-blue-grey"> no </a>
+		
+	<footer class="w3-bottom w3-container w3-flat-midnight-blue"> 
+	        <p>Brought to you by Katelyn Eusebio and the Maker Space team!</p> 
+	</footer>
     	</div>
 		
-</div>	
-	
+</div>	<!--end of page six-->	
 
 <div class="page" id="seven">
 	<div id="header" class="w3-container w3-flat-midnight-blue">
@@ -194,22 +224,18 @@ blah, blah, blah, blah
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p id="results"></p>
-		<a onclick="getResults();" class="w3-button w3-large w3-indigo w3-round-xxlarge w3-hover-blue-grey">CLICK FOR RESULTS</a>
-	</div>
-	
-</div>
-	
-	<!-- created results page and button that reveals final results. added </div> tags.-->
+		<p id="results"></p> <!--displays results-->
+		<a onclick="getResults();" class="w3-button w3-large w3-white w3-round-xxlarge w3-hover-blue-grey">CLICK FOR RESULTS</a> <!-- results page and button reveals final results. -->
 		
-
-
 	<footer class="w3-bottom w3-container w3-flat-midnight-blue">
-		<p> :) </p>
+		<p>Brought to you by Katelyn Eusebio and the Maker Space team!</p>
 	</footer>
 	<div> 
 	
-</div>
+</div> <!--end of page seven-->	
+	
+
+
 	
 </body>
 </html>
